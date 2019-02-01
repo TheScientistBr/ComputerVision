@@ -5,7 +5,7 @@ author: "Delermando Branquinho Filho"
 date: "31 de janeiro de 2019"
 output: #html_document
   md_document:
-    variant: markdown_github
+  variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
