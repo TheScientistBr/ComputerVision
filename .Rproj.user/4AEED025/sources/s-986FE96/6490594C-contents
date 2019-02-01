@@ -3,9 +3,9 @@ title: "Classification Object"
 subtitle: "Using mxnet - Apache Incubating"
 author: "Delermando Branquinho Filho"
 date: "31 de janeiro de 2019"
-output: #html_document
+output: 
   md_document:
-  variant: markdown_github
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -108,7 +108,7 @@ max.idx <- max.col(t(prob))
 
 The index doesn't make much sense, so let's see what it really means. Read the names of the classes from the following file:
 
-```{r}
+```{r synsets}
 synsets <- readLines("Inception/synset.txt")
 ```
 
@@ -121,7 +121,7 @@ print(paste("Predicted Top-class:", synsets[[max.idx]]))
 
 ### Trying again with others pictures - Coffee mug
 
-```{r}
+```{r coffee}
 im <- load.image("caneca.jpg")
 plot(im)
 normed <- preproc.image(im, mean.img)
@@ -135,7 +135,7 @@ print(paste0("Predicted Top-class: ", synsets  [[max.idx]]))
 
 ### Trying again with others pictures - Book
 
-```{r}
+```{r error}
 im <- load.image("chave.jpg")
 normed <- preproc.image(im, mean.img)
 plot(im)
