@@ -1,0 +1,3 @@
+"0","im <- load.image(""chave.jpg"")"
+"0","normed <- preproc.image(im, mean.img)"
+"0","plot(im)"

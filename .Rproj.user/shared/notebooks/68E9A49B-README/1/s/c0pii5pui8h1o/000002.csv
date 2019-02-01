@@ -1,0 +1,2 @@
+"0","im <- load.image(""caneca.jpg"")"
+"0","plot(im)"
